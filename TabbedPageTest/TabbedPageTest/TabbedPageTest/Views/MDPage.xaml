@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="TabbedPageTest.Views.MDPage"
+                  Title="MDPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Label Text="Some Action" />
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

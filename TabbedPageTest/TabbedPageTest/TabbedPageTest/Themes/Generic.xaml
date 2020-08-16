@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:themes="clr-namespace:TabbedPageTest.Themes"
+                    x:Class="TabbedPageTest.Themes.Generic">
+
+    <ResourceDictionary.MergedDictionaries>
+        <themes:Colors />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="BaseLabelStyle"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{DynamicResource PrimaryTextColor}" />
+        <Setter Property="VerticalTextAlignment"
+                Value="Center" />
+        <Setter Property="HorizontalTextAlignment"
+                Value="Center" />
+        <Setter Property="LineBreakMode"
+                Value="WordWrap" />
+        <Setter Property="FontSize"
+                Value="14" />
+    </Style>
+
+    <Style BasedOn="{StaticResource BaseLabelStyle}"
+           TargetType="Label" />
+    
+</ResourceDictionary>
